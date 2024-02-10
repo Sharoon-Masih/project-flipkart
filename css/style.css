@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/*remember html ma hum "link" tag ma link krwatay hain or Css ma hum import krtay hain.*/
+
+:root {
+    --main-bg-color: rgb(0, 85, 255);
+    /*Now i have made this global variable for color now i can use it anywhere in the file.*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: lightgray;
+}
+
+footer {
+    background-color: var(--main-bg-color);
+    height: 12vh;
+    color: white;
+    font-family: "Roboto";
+}
+
+.Bar {
+    background-color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    align-items: center;
+}
+.logo{
+    display: inline-flex;
+}
+.option{
+    display: inline-flex;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 0 23px;
+    text-decoration: none;
+    font-family: "roboto";
+    font-weight: 500;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: var(--main-bg-color);
+    /*to access variable we use "Var()" */
+    font-weight: bold;
+
+}
+
+nav .search {
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+}
+
+nav .search .btn {
+    padding: 0 5px;
+}
+
+nav .search .sbar {
+    padding: 0 10px;
+    height: 5vh;
+    width: 50vw;
+    border-radius: 10px;
+    border-color: var(--main-bg-color);
+    background-color: aliceblue;
+    color: gray;
+    font-family: "roboto";
+    font-weight: bold;
+    font-size: large;
+
+}
+
+nav .search .btn1 {
+    height: 5vh;
+    width: 5 vw;
+    padding: 0 10px;
+    border-radius: 10px;
+    border-color: var(--main-bg-color);
+    font-family: "roboto";
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    /*due to this property when we put cursor on button it become hand icon*/
+}
+
+nav .search .btn1:hover {
+    background-color: var(--main-bg-color);
+    color: white;
+
+}
+
+.container {
+    min-height: calc(100vh - 12vh - 10vh);
+    /*yaha mena "calc()" method ko use krka "total height - footerHeight - Headerheight" iss tarah without scroll bar humara pass humari main ki height agyi */
+}
+.main{
+    margin: 10px 0px;
+}
+.slider {
+    display: flex;
+    margin: auto;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.slider img {
+
+    /* margin: auto; */
+    width: 80vw;
+    height: 45vh;
+}
+
+.slider .f1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .f2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .f3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .img2 {
+    padding: 0 10px;
+    transform: translateX(-611px);
+    animation: slide2 7s cubic-bezier(0.075, 0.82, 0.165, 1) 2s infinite
+
+}
+.slider .img1 {
+    transform: translateX(-755px);
+    animation: slide1 7s cubic-bezier(0.075, 0.82, 0.165, 1) 2s infinite
+}
+@keyframes slide1 {
+    from {
+        transform: translateX(-755px);
+    }
+
+    to {
+        transform: translateX(628px);
+    }
+}
+@keyframes slide2 {
+    from {
+        transform: translateX(-611px);
+    }
+
+    to {
+        transform: translateX(760px);
+    }
+}
+.kart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    font-family: "roboto";
+}
+.kart-child{
+    margin:10px;
+    background-color: white;
+    width: 96vw;
+    padding: 12px;
+    /* padding-right: 50px; */
+    height: 40vh;
+    z-index: 1;
+}
+.kartitems{
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+}
+.kart-item {
+    margin: 5px;
+    display: inline-flex; /*Flex be block line element hai iss lia usko inline kia hai taka har kart-item ka sth dusri kart item aa skay*/
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+    border: 2px lightgray solid;
+    border-radius: 4px;
+    overflow: hidden;
+    
+}
+
+.kart-child .img{
+    width: 12vw;
+    transition-property: width;
+    transition-timing-function: ease;
+    
+}
+.kart-child .img:hover{
+   width: 13vw;
+}
+.kart-child .lines{
+    margin: 2px 0px;
+    text-align: center;
+}
+.kart-child .line1{
+    margin: 2px 0px;
+}
+.kart1 .kart-item2{
+    display: inline-flex;
+    flex-direction: column;
+}
+.kart1 .kart-item3 .k3{
+    height: 16.5vh;
+}
+.kart1 .kart-item4{
+  background-color: white;
+
+}
+.kart1 .kart-item4 .k4{
+    height: 16.5vh;
+    background-color: white;
+}
+.kart1 .kart-item6 .k6{
+    height: 16.5vh;
+}
+.kartitems2{
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+}
+.kart2 .kart-item6 .k6{
+    height: 16.5vh;
+}
+.kart2 .kart-item7 .k7{
+    height: 16.5vh;
+    border:2px solid black;
+}
+.kart2 .kart-item3 .k3{
+    width: 14.5vw;
+    height: 14vh;
+    transition-property: width;
+    transition-timing-function: ease;
+    
+}
+.kart2 .kart-item3 .k3:hover{
+    height: 15vh;
+}

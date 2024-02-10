@@ -1,0 +1,6 @@
+/* Utils means Utility file,yeh file iss lia bnayi hai kiu isme srf hum wohi css rules bnayega jo huma multiple time use krnay par sktay hain.*/
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
