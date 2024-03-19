@@ -81,9 +81,9 @@ nav .search .sbar {
 }
 
 nav .search .btn1 {
-    height: 5vh;
-    width: 5 vw;
-    padding: 0 10px;
+    /* height: 5vh; */
+    /* width: 10vw; */
+    padding:  14px;
     border-radius: 10px;
     border-color: var(--main-bg-color);
     font-family: "roboto";
